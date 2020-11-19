@@ -1,0 +1,5 @@
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+input{
+    margin-top: 30px;
+    width: 400px;
+}

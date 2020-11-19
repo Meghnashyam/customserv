@@ -1,0 +1,8 @@
+<h1>Application log</h1>
+<br>
+<label>
+	Date Time Range:
+	<input [owlDateTimeTrigger]="dt10" [owlDateTime]="dt10" [selectMode]="'range'" [max]="maxDate" required
+		[(ngModel)]="selectedMoments">
+	<owl-date-time #dt10 (afterPickerClosed)="onChange()"></owl-date-time>
+</label>

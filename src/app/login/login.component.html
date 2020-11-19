@@ -1,0 +1,33 @@
+<div class="signin-content">
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <p>Please login to continue</p>
+        <div *ngIf="errorMessage" class="alert alert-warning">
+          <strong>Invalid username or password </strong>
+        </div>
+        <mat-form-field class="full-width-input">
+          <input matInput placeholder="User" formControlName="userName" [(ngModel)]="username" required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your user name
+          </mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width-input">
+          <input matInput type="password" placeholder="Password" formControlName="password" [(ngModel)]="password"
+            required>
+          <mat-error *ngIf="isFieldInvalid('userName')">
+            Please inform your password
+          </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Login</button>
+     
+        <div class="container btn">
+          <p> or login using </p>
+          <button type="button" class="button2">Google</button>
+          <button type="button" class="button2" (click)="login()">Microsoft</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+  <router-outlet *ngIf="!isIframe"></router-outlet>

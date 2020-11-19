@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand">VPODS</a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item" *ngIf="!loggedin()">
+            <a class="nav-link" routerLink="login">Login</a>
+        </li>
+        <li class="nav-item" *ngIf="loggedin()">
+            <a class="nav-link" routerLink="home" (click)="onLogout()">Logout</a>
+        </li>
+    </ul>
+</nav>

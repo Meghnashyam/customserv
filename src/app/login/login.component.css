@@ -1,0 +1,27 @@
+mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+    }
+    .signin-content {
+    padding: 60px 1rem;
+    }
+    .full-width-input {
+    width: 100%;
+    }
+    .container.btn{
+        justify-content: center;
+    }
+    text-align:right
+    .button2 {
+        position: relative;
+        background: border-box;
+        cursor: pointer;
+        padding: 10%;
+        margin-top: 0px;
+        border-style:hidden ;    
+    } 
+    .mat-icon{
+        color: rgb(5, 28, 61);
+        transform: scale(0.5);
+    }
